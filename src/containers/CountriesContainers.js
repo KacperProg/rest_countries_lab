@@ -14,10 +14,11 @@ const CountriesContainers = () => {
     }
 
     const visitOfCountry = (newVisited) => {
-        const nowVisited = [...visited]
-        nowVisited.push(newVisited)
+        const nowVisited = [...visited,newVisited]
+        // nowVisited.push(newVisited)
         setVisited(nowVisited)
-        countries.pop(newVisited)
+        const index = countries.indexOf(newVisited)
+        countries.splice(index,1)
         setCountries(countries)
     }
 
