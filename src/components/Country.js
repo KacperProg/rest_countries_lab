@@ -1,8 +1,13 @@
-const Country = (countryName) => {
+const Country = ({country, onButtonClick}) => {
     
+    const handleButtonClick = () => {onButtonClick()}
+
     return (
-        <h1></h1>
-      );
+        <>
+        <h3>{country.name.common}</h3>
+        <button onClick={handleButtonClick}>Visited!</button>
+        </>
+        );
 }
  
 export default Country;
