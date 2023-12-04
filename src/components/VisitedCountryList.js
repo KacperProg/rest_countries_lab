@@ -1,13 +1,14 @@
 import Country from "./Country";
+import VisitedCountry from "./VisitedCountry";
 
 const VisitedCountryList = ({visited}) => {
     
-    const VisitedCountryList = visited.map((newlyVisited, id) => <Country key={id} country={newlyVisited}/> )
+    const visitedCountryList = visited.map((newlyVisited, id) => <VisitedCountry key={id} country={newlyVisited}/> )
     
     return (
         <>
             <h1>Visited Countries:</h1>
-            {VisitedCountryList}
+            {visitedCountryList}
         </>
       );
 }
