@@ -1,8 +1,8 @@
 import Country from "./Country";
 
-const CountryList = ({countries, onVisitCountry}) => {
+const CountryList = ({countries, onButtonClick}) => {
 
-    const listOfCountries = countries.map((country, id) => <Country key={id} country={country} onButtonClick={() => onVisitCountry(id)}/>)
+    const listOfCountries = countries.map((country, id) => <Country key={id} country={country} onButtonClick={onButtonClick}/>)
 
     return ( 
         <>  

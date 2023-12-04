@@ -28,7 +28,7 @@ const CountriesContainers = () => {
 
     return (
     <>
-        <CountryList countries={countries} onVisitCountry={visitOfCountry}/>
+        <CountryList countries={countries} onButtonClick={visitOfCountry}/>
         <VisitedCountryList visited={visited}/>
     </>);
 }

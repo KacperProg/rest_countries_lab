@@ -1,6 +1,6 @@
 const Country = ({country, onButtonClick}) => {
     
-    const handleButtonClick = () => {onButtonClick()}
+    const handleButtonClick = () => {onButtonClick(country)}
 
     return (
         <>
